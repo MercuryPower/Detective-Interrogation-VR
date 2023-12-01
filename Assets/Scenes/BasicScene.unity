@@ -479,7 +479,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 395277214}
-  - component: {fileID: 395277215}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Untagged
@@ -505,32 +504,6 @@ Transform:
   - {fileID: 1133792759}
   m_Father: {fileID: 1050700809}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &395277215
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395277213}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 3
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &402678832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1141,7 @@ GameObject:
   - component: {fileID: 1050700807}
   - component: {fileID: 1050700811}
   - component: {fileID: 1050700810}
+  - component: {fileID: 1050700812}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1279,6 +1253,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XROrigin: {fileID: 1050700808}
+--- !u!143 &1050700812
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050700806}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!4 &1063471915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3207111085394738143, guid: 3a51908fb22be24409c7be11cdf30f14, type: 3}
@@ -11220,7 +11220,6 @@ GameObject:
   - component: {fileID: 7685259905753332538}
   - component: {fileID: 508709922245869742}
   - component: {fileID: 7339356832043625709}
-  - component: {fileID: 7685259905753332539}
   m_Layer: 0
   m_Name: Plane.002
   m_TagString: Untagged
@@ -12831,8 +12830,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7230467911217374997
-MeshCollider:
+--- !u!65 &7230467911217374997
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12849,10 +12848,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5074941243508514199, guid: 9c460d444ded51846bc547225927740f, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 4.223057, y: 1.3474663, z: 1.3773217}
+  m_Center: {x: 1.0697312, y: 0.6925128, z: -1.6150105}
 --- !u!1 &7242195362337789617
 GameObject:
   m_ObjectHideFlags: 0
@@ -13457,27 +13455,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543450653305980450}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7685259905753332539
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6507901977855480524}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 12.223476, y: 5.0397134, z: 12.223475}
-  m_Center: {x: 1.160696, y: 2.4934895, z: 1.4468908}
 --- !u!4 &7725405546046580964
 Transform:
   m_ObjectHideFlags: 0
